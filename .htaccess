@@ -1,0 +1,21 @@
+RewriteEngine on
+Options All -Indexes
+
+#RewriteRule "(^|)\." - [F]
+
+#Bloquear acesso a arquivos .env e json sesiveis
+
+#<FilesMatch "\.(env)$">
+#    Order allow,deny
+#    Deny from all
+#</FilesMatch>
+
+# Bloqueia um arquivo especifico
+
+<Files "file.json">
+    Order allow,deny
+    Deny from all
+</Files>
+
+
+ 
