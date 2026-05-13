@@ -3,8 +3,6 @@ Options All -Indexes
 
 #RewriteRule "(^|)\." - [F]
 
-#Bloquear acesso a arquivos .env e json sesiveis
-
 #<FilesMatch "\.(env)$">
 #    Order allow,deny
 #    Deny from all
@@ -16,6 +14,3 @@ Options All -Indexes
     Order allow,deny
     Deny from all
 </Files>
-
-
- 
