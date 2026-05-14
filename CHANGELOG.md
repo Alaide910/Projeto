@@ -4,4 +4,4 @@ Feature: cadastro
 
 - Recuperar senha
 - Cadastro no Google
-- Cadastrar nova senha 
+- Cadastrar nova senha  
