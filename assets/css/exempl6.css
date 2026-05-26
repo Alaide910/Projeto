@@ -1,0 +1,13 @@
+/*Reset e Layout*/
+* {margin: 0; padding:0; box-sizing: berder-box;}
+body { font-family: Arial,sans-serif;background: #f5f5f5;}
+container { display: flex;justify-content: center;gap: 20px; padding: 100px;flex-wrap;}
+
+/* Elementos Animados*/
+.card { width: 220px;height: 220px; background:royalblue; color: white;border-radius:12px;display: flex;justify-content: center;align-items: center;font-size: 28px;transition: all 0.3s case; animation-timing-function: aparecer 1s ease;}
+  ;}
+   .card:hover { transform: translateY(-10px) scale(1.05);box-shadow: 0 15px 30px rgb(0,0,0 0,3);}
+  /*Definição de Keyframe*/
+
+  @keyframes aparecer { from { opacity: 0; translatey(30px);} to { opacity: 1; transform: translateY(0);}}
+
