@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class="item">HTMl</li>
+        <li class="item">CSS</li>
+        <li class="item">JS</li>
+    </ul>
+
+
+<Script>
+// Seleciona todos os itens
+
+const itens =
+document.querySelectorAll(".item");
+
+// Resultado: NodeList (3)
+
+console.log(itens);
+ </script>
+
+ <script> 
+ 
+ itens.forEach(function(item){
+
+    itens[1].style.fontWeight = "bold";
+
+  itens.dEventListener("cick", function(){
+    console.log("voce clicou em: + item.innerHTML");
+ 
+ });
+ 
+
+  })
+
+</script>
+
+</body>
+</html>

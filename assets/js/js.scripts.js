@@ -126,3 +126,8 @@ if (op == "+") {
 } else {
   alert("Iválido");
 }
+
+ <button onclick="clicou()">Clique Aqui</button>
+
+
+        

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trocar tela</title>
+</body>
+</head>
+
+<body class="light">
+
+    <button onclick="temaEscuro()">Tema Escuro</button>
+
+    <script>
+        function temaEscuro(){
+            if (document.body.className === "light"){
+
+            document.body.style.background = "black";
+            document.body.style.color = "white";
+            document.body.className = "dark";
+        
+            } else {
+                document.body.style.background = "white";
+                document.body.style.color = "black";
+                document.body.className = "ligt";
+            }
+        }
+    </script>
+
+</body>
+</html>
