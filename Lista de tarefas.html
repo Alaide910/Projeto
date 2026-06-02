@@ -1,0 +1,27 @@
+<!--Mini Projeto-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="tarefa" />
+    <button id="adicionar">adicionar</button>
+    <ul id="lista"></ul>
+  </body>
+
+  <script>
+    const input = document.querySelector("#tarefa");
+    const botao = document.querySelector("#adicionar");
+    const Lista = document.querySelector("#lista");
+    botao.addEventListener("click", () => {
+        
+      const item = document.createElement("li");
+      item.textContent = input.value;
+      lista.appendChild(item);
+      input.value = "";
+    });
+  </script>
+</html>
