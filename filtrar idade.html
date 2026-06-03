@@ -1,0 +1,20 @@
+<!---Mini Projeto 3--->
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>filtrar maiores idade</title>
+  </head>
+  <body>
+    <script>
+      const pessoas = [
+        { nome: "Ana", idade: 20 },
+        { nome: "João", idade: 15 },
+      ];
+
+      const maiores = pessoas.filter((p) => p.idade >= 18);
+      console.log(maiores);
+    </script>
+  </body>
+</html>
