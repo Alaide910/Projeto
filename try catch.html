@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Then Catch</title>
+
+    <script>
+      function esperar() {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            resolve("Terminou a espera");
+          }, 2000);
+        });
+      }
+
+      async function iniciar() {
+        console.log("Inicio");
+        try{
+        const resposta = await esperar();
+
+        // o fetch nao rejeita em erros 404/500
+        if (! respoata.ok){
+          throw new Error("Erro:" + resposta.status);
+        }
+        const usuario = await respoata.json();
+      } catch (Erro) {
+        console.log("Falha:" , erro .message);
+
+      }
+    </script>
+  </head>
+</html>

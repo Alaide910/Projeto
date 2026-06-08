@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btnBuscar">Buscar usuário</button>
+    <p id="resultado"></p>
+
+    <script>
+      const botao = document.querySelector("#btnBuscar");
+      const resultado = document.querySelector("#resultado");
+
+      botao.addEventListener("click", async () => {
+          resultado.textContent = "Carregando...";
+
+          try {
+              const resposta = await fetch("https://jsonplaceholder.typicode.com/users/1");
+              if (!resposta.ok) throw new Error("Erro");
+
+              const usuario = await resposta.json();
+              // Mudança: A API usa 'name' em inglês, e corrigimos para crases (``) e o símbolo correto ($)
+              resultado.textContent = `Nome: ${usuario.name}`; 
+          } catch (erro){
+              resultado.textContent = "Falha ao carregar.";
+          }
+      }); // Correção: Fechamento com ponto e vírgula
+    </script>
+  </body>
+</html>
