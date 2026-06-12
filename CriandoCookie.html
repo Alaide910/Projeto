@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criando um Cookie</title>
+  </head>
+  <body>
+    <script>
+       document.cookie = "nome=Alaide";
+
+       console.log(document.cookie);
+
+      const dias = 7;
+      const data = new Date();
+      data.setTime(data.getTime() + dias * 24 * 60 * 60 * 1000);
+
+      document.cookie = `tema=dark; expires=${data.toUTCString()}`;
+    </script>
+  </body>
+</html>
